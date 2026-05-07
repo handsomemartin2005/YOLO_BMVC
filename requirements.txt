@@ -1,0 +1,9 @@
+ultralytics==8.2.103
+opencv-python
+pillow
+numpy
+matplotlib
+pandas
+pyyaml
+tqdm
+thop

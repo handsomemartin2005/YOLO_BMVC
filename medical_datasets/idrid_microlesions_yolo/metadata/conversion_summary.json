@@ -1,0 +1,43 @@
+{
+  "dataset": "IDRiD A. Segmentation",
+  "url": "https://zenodo.org/records/17219542/files/A.%20Segmentation.zip?download=1",
+  "output_dir": "D:\\code\\yolov8\\medical_datasets\\idrid_microlesions_yolo",
+  "val_ratio": 0.2,
+  "seed": 3407,
+  "min_area": 1,
+  "classes": {
+    "0": "microaneurysm",
+    "1": "haemorrhage",
+    "2": "hard_exudate",
+    "3": "soft_exudate"
+  },
+  "splits": {
+    "train": {
+      "microaneurysm": 2082,
+      "haemorrhage": 1141,
+      "hard_exudate": 6144,
+      "soft_exudate": 88,
+      "images": 43,
+      "empty_images": 0,
+      "objects": 9455
+    },
+    "val": {
+      "microaneurysm": 330,
+      "haemorrhage": 224,
+      "hard_exudate": 1382,
+      "soft_exudate": 24,
+      "images": 11,
+      "empty_images": 0,
+      "objects": 1960
+    },
+    "test": {
+      "microaneurysm": 1085,
+      "haemorrhage": 535,
+      "hard_exudate": 4116,
+      "soft_exudate": 38,
+      "images": 27,
+      "empty_images": 0,
+      "objects": 5774
+    }
+  }
+}

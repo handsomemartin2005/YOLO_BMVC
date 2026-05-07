@@ -1,0 +1,25 @@
+# Runtime outputs
+/runs/
+/results/
+
+# Optional raw archives if users rebuild the dataset
+/medical_datasets/archives/
+/medical_datasets/idrid_raw/
+
+# Caches
+**/__pycache__/
+*.py[cod]
+*.cache
+
+# IDE/OS
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
+
+# Exports
+*.onnx
+*.engine
+*.torchscript
+*.tflite
+*.mlpackage

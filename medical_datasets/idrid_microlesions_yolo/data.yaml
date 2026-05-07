@@ -1,0 +1,10 @@
+path: D:/code/yolov8/medical_datasets/idrid_microlesions_yolo
+train: images/train
+val: images/val
+test: images/test
+nc: 4
+names:
+  0: microaneurysm
+  1: haemorrhage
+  2: hard_exudate
+  3: soft_exudate
