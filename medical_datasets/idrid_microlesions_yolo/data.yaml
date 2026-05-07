@@ -1,4 +1,3 @@
-path: D:/code/yolov8/medical_datasets/idrid_microlesions_yolo
 train: images/train
 val: images/val
 test: images/test

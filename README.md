@@ -67,7 +67,7 @@ python scripts/check_package.py
 Quick one-epoch run:
 
 ```bash
-python train.py --epochs 1 --imgsz 640 --batch 1 --workers 0 --device auto --name smoke_idrid --exist-ok
+python train.py --epochs 1 --imgsz 640 --batch 1 --workers 0 --device 0 --amp false --name smoke_idrid --exist-ok
 ```
 
 ## Full Training
@@ -75,7 +75,7 @@ python train.py --epochs 1 --imgsz 640 --batch 1 --workers 0 --device auto --nam
 The model architecture is unchanged from the previous project.
 
 ```bash
-python train.py --epochs 300 --imgsz 1280 --batch 4 --workers 4 --device 0
+python train.py --epochs 300 --imgsz 1280 --batch 4 --workers 4 --device 0 --amp false
 ```
 
 Outputs are written to:

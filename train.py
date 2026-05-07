@@ -29,6 +29,17 @@ def parse_pretrained(value: str):
     return value
 
 
+def str2bool(value):
+    if isinstance(value, bool):
+        return value
+    lower = str(value).strip().lower()
+    if lower in {"true", "1", "yes", "y", "on"}:
+        return True
+    if lower in {"false", "0", "no", "n", "off"}:
+        return False
+    raise argparse.ArgumentTypeError(f"expected a boolean value, got '{value}'")
+
+
 def get_device(device: str):
     if device != "auto":
         return device
@@ -52,8 +63,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--patience", type=int, default=None)
     parser.add_argument("--cache", action="store_true")
     parser.add_argument("--exist-ok", action="store_true")
-    parser.add_argument("--amp", action=argparse.BooleanOptionalAction, default=True)
-    parser.add_argument("--deterministic", action=argparse.BooleanOptionalAction, default=True)
+    parser.add_argument("--amp", type=str2bool, default=True)
+    parser.add_argument("--deterministic", type=str2bool, default=True)
     return parser.parse_args()
 
 
